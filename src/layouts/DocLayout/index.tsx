@@ -46,7 +46,7 @@ const DocLayout: FC = () => {
       );
     }
     return routeMeta.frontmatter?.sidebar === false ? (
-      <div>
+      <div className="hidden-sidebar">
         <Outlet />
       </div>
     ) : (
