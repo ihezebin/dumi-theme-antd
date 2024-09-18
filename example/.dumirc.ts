@@ -1,4 +1,5 @@
 import { defineConfig } from 'dumi';
+// @ts-ignore
 import pkgJSON from '../package.json';
 import { defineThemeConfig } from './.dumi/theme/defineThemeConfig';
 
@@ -13,6 +14,10 @@ export default defineConfig({
     { id: 'en-US', name: 'English', suffix: '-en' }
   ],
   extraBabelPresets: ['@emotion/babel-preset-css-prop'],
+  styles: [
+    `#root * {font-family: 'Kaiti SC', 'Songti SC', 'PingFang SC', cursive, sans-serif; !important;}`,
+    `.hidden-sidebar {padding: 64px;}`
+  ],
   // pass theme config
   themeConfig: defineThemeConfig({
     name: 'dumi-theme-antd',
