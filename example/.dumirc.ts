@@ -15,8 +15,7 @@ export default defineConfig({
   ],
   extraBabelPresets: ['@emotion/babel-preset-css-prop'],
   styles: [
-    `html * {font-family: 'Kaiti SC', 'Songti SC', 'PingFang SC', cursive, sans-serif; !important;}`,
-    `.ant-btn {font-family: 'Kaiti SC', 'Songti SC', 'PingFang SC', cursive, sans-serif; !important;}`,
+    `html * {font-family: 'Kaiti SC', 'Songti SC', 'PingFang SC', cursive, sans-serif !important;}`,
     `.hidden-sidebar {padding: 64px;}`
   ],
   // pass theme config
